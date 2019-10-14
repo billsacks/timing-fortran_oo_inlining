@@ -52,8 +52,6 @@ points.
 
 # Other things I have tried
 
-## Things I have tried
-
 - Compiling with `-O3` rather than `-O2`: made essentially no difference
   to any of the test cases
 
