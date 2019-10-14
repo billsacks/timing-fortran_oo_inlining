@@ -49,3 +49,15 @@ routines that operate on a single point should be written in a
 procedural manner. Object-oriented routines should have loops over
 points inside them, rather than being called from within a loop over
 points.
+
+# Other things I have tried
+
+## Things I have tried
+
+- Compiling with `-O3` rather than `-O2`: made essentially no difference
+  to any of the test cases
+
+- Using the `FORCEINLINE` intel compiler directives
+  (https://software.intel.com/en-us/articles/procedure-inlining-intel-fortran-compiler):
+  I tried this with `oo_nonoverridable_routine.f90`; the timing was not
+  improved, and the optrpt still suggests that this was NOT inlined.
