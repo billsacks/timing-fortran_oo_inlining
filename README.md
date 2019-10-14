@@ -1,7 +1,7 @@
 # Overview
 
 The point of this repository is to test whether various calls in
-object-oriented code are inlined by the intel compiler.
+object-oriented Fortran code are inlined by the intel compiler.
 
 My hypothesis was that a call to an object-oriented routine would
 prevent inline due to the need for dynamic dispatch.
